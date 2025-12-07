@@ -1,9 +1,12 @@
 {
   "name": "mcp-derby-server",
-  "version": "1.0.0",
-  "description": "MCP Server to Roller Derby Rules",
+  "version": "1.0.2",
+  "description": "MCP Server to access Roller Derby rules extracted from PDF (French)",
   "type": "module",
   "main": "index.js",
+  "bin": {
+    "mcp-derby": "./index.js"
+  },
   "scripts": {
     "start": "node index.js",
     "dev": "node --watch index.js"
@@ -11,10 +14,23 @@
   "keywords": [
     "mcp",
     "roller-derby",
-    "rules"
+    "rules",
+    "model-context-protocol",
+    "derby",
+    "french"
   ],
   "author": "Golrigames",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Golrigames/RollerDerbyRulesMcp.git"
+  },
+  "files": [
+    "index.js",
+    "output/",
+    "README.md",
+    "LICENSE"
+  ],
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.24.3"
   }
