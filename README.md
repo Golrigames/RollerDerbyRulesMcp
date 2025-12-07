@@ -65,23 +65,19 @@ Add this server to your Claude Desktop configuration:
 }
 ```
 
-### GitHub Copilot (VS Code)
+### GitHub Copilot (VS Code) Local path
 
 1. Install the "GitHub Copilot" extension in VS Code
 2. Open settings (Ctrl+, or Cmd+,)
 3. Search for "MCP" or "Model Context Protocol"
-4. Add the server configuration in `settings.json`:
+4. Add a `mcp.json` in .vscode directory inside your project :
 
 ```json
 {
-  "github.copilot.advanced": {
-    "mcp": {
-      "servers": {
-        "derby-rules": {
-          "command": "node",
-          "args": ["/absolute/path/to/mcpDerby/index.js"]
-        }
-      }
+  "servers": {
+    "derby-rules": {
+      "command": "node",
+      "args": ["/absolute/path/to/mcpDerby/index.js"]
     }
   }
 }
