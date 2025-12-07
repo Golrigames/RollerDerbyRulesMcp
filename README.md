@@ -1,4 +1,4 @@
-# MCP Server Derby Rules
+# 🛼 MCP Server Roller Derby Rules
 
 MCP (Model Context Protocol) server to access Roller Derby rules extracted from a PDF (French)
 
